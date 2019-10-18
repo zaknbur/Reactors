@@ -29,6 +29,8 @@ export FLASK_ENV=development
 flask run
 ```
 
+Navigate to **http://localhost:5000**
+
 > **NOTE:** Keep this window open, as we're going to be making changes to our site throughout the day. If you accidentally close it, you can restart your site by issuing the same commands from above.
 
 ## Open the site

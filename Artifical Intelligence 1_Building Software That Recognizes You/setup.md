@@ -2,6 +2,8 @@
 
 To follow along with the exercises which make up this workshop, you will need a few utilities installed on your system, including Python and an IDE.
 
+> **NOTE** During the installation process you will be installing utilities commonly used in a command or terminal window such as Python and Git. The installation process will update system variables which aren't always detected in a command or terminal window already open. If you install a tool and receive an error message telling you it's not available, try closing the window and opening a new one.
+
 ## Code Editor (Visual Studio Code)
 
 To work with the code you will need a code editor. You are free to use any editor you like. Your instructor will use Visual Studio Code, an open source (OSS) editor from Microsoft.
@@ -19,6 +21,7 @@ The workshop presents a scenario where you will build a website using [Flask](ht
 To install Python, navigate to [Python.org](https://python.org) 
 
 > **NOTE** If installing on Windows, ensure you select the option to add Python to your PATH system variable.
+
 If Python 3.6 or higher isn't already installed on your computer, you can install it by visiting [python.org](https://python.org) and following the installation steps. If you're not sure if it's installed, you can test it by running the following command. If Python is installed the version number will appear in the console window.
 
 ``` bash
@@ -29,13 +32,11 @@ python --version
 python3 --version
 ```
 
-> **Note** If you do need to install Python, ensure you select the option to *Add Python 3.x to PATH*
-
 ![Dialog box for installing Python showing PATH option selected](./images/vision_python.png)
 
 ## Upgrading pip
 
-[pip](https://pypi.org/) is the package manager for Python. You should always ensure you have the latest version of `pip`. To perform the upgrade, you can issue the following command:
+[pip](https://pypi.org/) is the package manager for Python. You should always ensure you have the latest version of `pip`. To perform the upgrade, open a new command or terminal window and issue the following command:
 
 ``` bash
 # Windows
@@ -96,8 +97,8 @@ The sample code is provided as part of the [Reactors](https://github.com/microso
 
 ### Clone the repository
 
-1. Open a command or terminal window
-2. Navigate to the folder you want to put the code into
+1. Open a new command or terminal window to use solely for running your application
+2. Navigate to the folder you want to put the code into, which was created earlier
 3. Clone the repository
 
 ``` git
@@ -134,6 +135,9 @@ Install the packages listed in requirements.txt by using pip
 
 ``` console
 pip install -r requirements.txt
+
+# macOS or Linux
+pip3 install -r requirements.txt
 ```
 
 If you're following along, the next step is to [start the site](./starting-site.md).

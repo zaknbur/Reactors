@@ -135,12 +135,5 @@ Install the packages listed in requirements.txt by using pip
 ``` console
 pip install -r requirements.txt
 ```
-7. Confirm the site starts
-
-``` console
-flask run
-```
-
-Navigate to **http://localhost:5000**
 
 If you're following along, the next step is to [start the site](./starting-site.md).

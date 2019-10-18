@@ -63,6 +63,33 @@ To download the starter and solution files, you will [clone](https://help.github
 
 To install git, navigate to [Git downloads](https://git-scm.com/downloads) and follow the instructions.
 
+## Create a directory
+
+We'll start by opening a command or terminal window, and then creating a directory for use during this workshop:
+
+``` bash
+# Windows
+md ReactorsAI
+cd ReactorsAI
+
+# macOS or Linux
+mkdir ReactorsAI
+cd ReactorsAI
+```
+
+## Download the starter site
+
+1. If Git isn’t installed on your computer, go to the [Git website](https://git-scm.com/) and install it now. Versions are available for Windows, macOS, and Linux.
+2. In a command window or terminal, use `cd` to switch to the project directory you created in the previous subsection. Then use the following command to clone the GitHub repo containing the starter files for the website:
+
+# Using Git
+
+To download the starter and solution files, you will [clone](https://help.github.com/en/articles/cloning-a-repository) a repository from [GitHub](https://github.com) using git. Git is a distributed source code management system.
+
+### Installation of Git
+
+To install git, navigate to [Git downloads](https://git-scm.com/downloads) and follow the instructions.
+
 ## Starter code
 
 The sample code is provided as part of the [Reactors](https://github.com/microsoft/reactors) repository on [GitHub](https://github.com). Let's clone the repository and get the environment setup for the code.
@@ -116,4 +143,4 @@ flask run
 
 Navigate to **http://localhost:5000**
 
-## You're all set!!
+If you're following along, the next step is to [start the site](./starting-site.md).

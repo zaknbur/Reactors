@@ -16,7 +16,7 @@ The workshop presents a scenario where you will build a website using [Flask](ht
 
 ### Installation
 
-To install Python, navigate to [Python.org](https://python.org) and follow the instructions in the [Install Python Readme file] (https://github.com/microsoft/Reactors/blob/master/Artifical%20Intelligence%201_Building%20Software%20That%20Recognizes%20You/install-python.md)
+To install Python, navigate to [Python.org](https://python.org) and follow the instructions in the [Install Python Readme file](https://github.com/microsoft/Reactors/blob/master/Artifical%20Intelligence%201_Building%20Software%20That%20Recognizes%20You/install-python.md)
 
 > **NOTE** If installing on Windows, ensure you select the option to add Python to your PATH system variable.
 

@@ -60,7 +60,7 @@ def train():
 
     # TODO: Add code to create or update person
 
-    return render_template("train.html", messages=messages, image_uri=image.uri)
+    return render_template("translate.html", messages=messages, image_uri=image.uri)
 
 @app.route("/detect", methods=["GET", "POST"])
 def detect():

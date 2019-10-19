@@ -6,12 +6,12 @@ We'll start by opening a command or terminal window, and then creating a directo
 
 ``` bash
 # Windows
-md ReactorsAI
-cd ReactorsAI
+md contoso
+cd contoso
 
 # macOS or Linux
-mkdir ReactorsAI
-cd ReactorsAI
+mkdir contoso
+cd contoso
 ```
 
 ## Download the starter site

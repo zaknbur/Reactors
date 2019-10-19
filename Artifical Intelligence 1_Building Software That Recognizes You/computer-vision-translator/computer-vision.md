@@ -33,7 +33,7 @@ vision_key = os.environ["VISION_KEY"]
 
 ## Create the client
 
-We'll be using the `ComputerVisionClient` to use [Computer Vision](https://docs.microsoft.com/en-us/azure/cognitive-services/Computer-vision/Home). We'll need to load the appropriate classes, `CognitiveServiceCredentials`, which will be used to store the password, `ComputerVisionClient`, which is the actual client, and `ComputerVisionErrorException`, which represents errors raised by the service. The code finishes with the creation of the credentials, followed by the client.
+We'll be using the `ComputerVisionClient` to use [Computer Vision](https://docs.microsoft.com/en-us/azure/cognitive-services/Computer-vision/Home). We'll need to load the appropriate classes, `CognitiveServiceCredentials`, which will be used to store the password, `ComputerVisionClient`, which is the actual client, and `ComputerVisionErrorException`, which represents errors raised by the service. The code finishes with the creation of the credentials, followed by the client. Add the following function to the end of app.py.
 
 ``` python
 # Create vision_client
@@ -121,7 +121,7 @@ With our helper function created, let's add the code necessary to `translate` to
 
 ``` python
     # TODO: Add code to retrieve text from picture
-    messages = extract_text_from_image(image.blog, vision_client)
+    messages = extract_text_from_image(image.blob, vision_client)
 ```
 
 > **NOTE:** The tab at the beginning of the line of code is required. Python uses tab levels to identify enclosures, and we want to put the call to `extract_text_from_message` inside `index`. It should be in line with the existing comment.

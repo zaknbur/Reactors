@@ -64,7 +64,7 @@ python3 -m venv env
 . ./env/bin/activate
 ```
 
-Note: If you're using macOS or Linux the leading . for the . ./env/bin/activate is required as it indicates to Python where your source code resides.
+> **Note**: If you're using macOS or Linux the leading `.` for the `. ./env/bin/` activate is required as it indicates to Python where your source code resides.
 
 6. Install the necessary Python packages
 Install the packages listed in requirements.txt by using pip

@@ -16,7 +16,7 @@ Microsoft works with a company called Wild Me on a project called [Wildbook](htt
 
 ### Progressive
 
-Auto insurance provider Progressive may be best known for Flo, its iconic spokesperson. The company wanted to take advantage of customers’ increasing use of mobile channels to interact with its brand. So Progressive [used Microsoft Azure Bot Service](https://customers.microsoft.com/en-us/story/progressive-insurance-cognitive-services) and Cognitive Services to quickly and easily build the [Flo Chatbot](https://www.facebook.com/flofromprogressive/) - currently available through Messenger on Flo’s Facebook page - which answers customer questions, provides insurance quotes, and even offers a bit of witty banter in Flo’s popular, well - known style.
+Auto insurance provider Progressive may be best known for Flo, its iconic spokesperson. The company wanted to take advantage of customers’ increasing use of mobile channels to interact with its brand. So Progressive [used Microsoft Azure Bot Service](https://customers.microsoft.com/story/progressive-insurance-cognitive-services) and Cognitive Services to quickly and easily build the [Flo Chatbot](https://www.facebook.com/flofromprogressive/) - currently available through Messenger on Flo’s Facebook page - which answers customer questions, provides insurance quotes, and even offers a bit of witty banter in Flo’s popular, well - known style.
 
 As mobile has become a more important channel, Progressive has looked for ways to use it to connect with customers who want easy, personal, and trustworthy digital experiences. The insurer has found that the Microsoft Azure Bot Service and Cognitive Services APIs with which it had built chatbot also make it easy to adapt and refine the bot and its responses without needing data scientists to write complex code. The APIs also provide the ability for a knowledge base to grow and learn more over time, so the responses just keep getting better and better.
 
@@ -24,7 +24,7 @@ As mobile has become a more important channel, Progressive has looked for ways t
 
 It's important to ride-sharing company Uber that the driver behind the wheel matches the driver account on file, both to protect riders and to help ensure that the drivers’ accounts haven’t been compromised. Uber decided to add photo-matching technology to an array of screening methods that it uses.
 
-[Uber turned to Microsoft](https://customers.microsoft.com/en-us/story/731196-uber) for the performance, accuracy, and scalability of the Face API in Microsoft Cognitive Services, which can compare photos and return a match within milliseconds, even from a photo that might not be of the highest quality.
+[Uber turned to Microsoft](https://customers.microsoft.com/story/731196-uber) for the performance, accuracy, and scalability of the Face API in Microsoft Cognitive Services, which can compare photos and return a match within milliseconds, even from a photo that might not be of the highest quality.
 If the match is unsuccessful, the Uber platform using Microsoft Cognitive Services is smart enough to notice, for example, that the problem may be a reflection from eyeglasses, and it will ask the driver to remove their glasses and take their picture again.
 
 ## Microsoft's goal: democratizing AI

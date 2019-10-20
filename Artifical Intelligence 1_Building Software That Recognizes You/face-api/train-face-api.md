@@ -4,7 +4,7 @@
 
 In order to recognize people in an image you need to first train up your model. This is done by uploading pictures containing the face of the person you wish to be able to identify, and specifying a name. There is no pre-built UI for performing the task, but it can be completed with a couple of lines of code.
 
-> **NOTE:** In order to complete this portion of the lab, **a standard subscription is required** for Face API. You can see the [pricing details for Face API](https://azure.microsoft.com/en-us/pricing/details/cognitive-services/face-api/) for more information.
+> **NOTE:** In order to complete this portion of the lab, **a standard subscription is required** for Face API. You can see the [pricing details for Face API](https://azure.microsoft.com/pricing/details/cognitive-services/face-api/) for more information.
 
 ## Managing the key
 

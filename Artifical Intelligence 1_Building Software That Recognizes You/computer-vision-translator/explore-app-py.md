@@ -23,7 +23,7 @@ from dotenv import load_dotenv
 load_dotenv()
 ```
 
-[dotenv](https://pypi.org/project/python-dotenv/) is a common package across multiple frameworks and languages which simplify the management of environmental variables. Rather than constantly setting keys via the command line, or hard-coding them into the application, dotenv allows you to create a file named **.env** where you store your key/value pairs. Then the library is imported, and `load_dotenv()` will read the values and store them into environmental variables for execution of the application. When deployed to production, you specify the environmental variables like you normally would, like setting [App Settings](https://docs.microsoft.com/en-us/azure/app-service/configure-common) in App Services.
+[dotenv](https://pypi.org/project/python-dotenv/) is a common package across multiple frameworks and languages which simplify the management of environmental variables. Rather than constantly setting keys via the command line, or hard-coding them into the application, dotenv allows you to create a file named **.env** where you store your key/value pairs. Then the library is imported, and `load_dotenv()` will read the values and store them into environmental variables for execution of the application. When deployed to production, you specify the environmental variables like you normally would, like setting [App Settings](https://docs.microsoft.com/azure/app-service/configure-common) in App Services.
 
 ## Configure index route
 

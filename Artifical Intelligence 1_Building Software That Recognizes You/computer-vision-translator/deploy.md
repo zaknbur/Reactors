@@ -64,4 +64,4 @@ In addition, you discovered that you can use Azure Cognitive Services to build i
 
 ## Next Steps 
 
-Congratulations! You have created an app app which will allow a user to upload an image, detect and translate the text! Next we will explore adding [face detection to the app](./face-api/README.md).
+Congratulations! You have created an app app which will allow a user to upload an image, detect and translate the text! Next we will explore adding [face detection to the app](../face-api/README.md).

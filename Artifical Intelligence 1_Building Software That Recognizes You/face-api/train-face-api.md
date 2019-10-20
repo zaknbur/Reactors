@@ -33,7 +33,7 @@ az cognitiveservices account keys list --resource-group contoso-travel-rg --name
 We're using dotenv to manage our environmental variables. We now have a new key we need to store, the one for Face API. At the end of **.env**, add the following line
 
 ``` bash
-FACE_API_KEY=<your_face_api_key>
+FACE_KEY=<your_face_api_key>
 ```
 
 Update `<your_face_api_key>` with the key and URL you received from the prior step.

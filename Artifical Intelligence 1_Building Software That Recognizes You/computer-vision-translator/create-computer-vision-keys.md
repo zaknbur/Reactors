@@ -19,13 +19,13 @@ Azure Cognitive Services is a set of more than 20 services and APIs for infusing
 
 ## Azure Command-Line Interface (CLI)
 
-If you aren't familiar with the Azure CLI, you can learn more about it and the numerous commands it supports in [Get started with Azure CLI](https://docs.microsoft.com/en-us/cli/azure/get-started-with-azure-cli?view=azure-cli-latest). Most operations in Azure can be performed by using either the CLI or the [Azure Portal](https://portal.azure.com). Power users tend to prefer the CLI, in part because CLI commands can be used in scripts to automate repetitive tasks.
+If you aren't familiar with the Azure CLI, you can learn more about it and the numerous commands it supports in [Get started with Azure CLI](https://docs.microsoft.com/cli/azure/get-started-with-azure-cli?view=azure-cli-latest). Most operations in Azure can be performed by using either the CLI or the [Azure Portal](https://portal.azure.com). Power users tend to prefer the CLI, in part because CLI commands can be used in scripts to automate repetitive tasks.
 
 ### Install the Azure (CLI)
 
 The [Azure CLI](https://docs.microsoft.com/cli/azure/get-started-with-azure-cli?view=azure-cli-latest) is a command-line environment for creating and managing Azure resources. Versions are available for Windows, macOS, and Linux. In subsequent unites you'll use the Azure CLI to create various Azure resources. Here you will install the Azure CLI and login to Azure.
 
-If you haven't already installed Azure CLI, visit the [Azure CLI web page](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest) and follow the installation instructions. You can determine if it's already installed by running `az -v` in a console window, which will display the verson number.
+If you haven't already installed Azure CLI, visit the [Azure CLI web page](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest) and follow the installation instructions. You can determine if it's already installed by running `az -v` in a console window, which will display the verson number.
 
 ### Login to Azure using the Azure CLI
 
@@ -59,7 +59,7 @@ You can obtain a Computer Vision API key using the [Azure CLI](https://docs.micr
 
 ### Create a Resource Group
 
-Resource groups are a key component of [resource management](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-overview) in Azure. They act as containers for other Azure resources and serve to group those resources together so that you can view billing information for them as a group, apply security rules as a group, and even delete them as a group. Every Azure resource that you create must be part of a resource group.
+Resource groups are a key component of [resource management](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview) in Azure. They act as containers for other Azure resources and serve to group those resources together so that you can view billing information for them as a group, apply security rules as a group, and even delete them as a group. Every Azure resource that you create must be part of a resource group.
 
 Open a Command Prompt window or terminal, and use the following command to create a resource group named **contoso-travel** in Azure’s North Central US region to hold all of the Azure resources you create in this module:
 

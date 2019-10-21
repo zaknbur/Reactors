@@ -4,6 +4,20 @@ To follow along with the exercises which make up this workshop, you will need a 
 
 > **NOTE** During the installation process you will be installing utilities commonly used in a command or terminal window such as Python and Git. The installation process will update system variables which aren't always detected in a command or terminal window already open. If you install a tool and receive an error message telling you it's not available, try closing the window and opening a new one.
 
+## Azure account
+
+We will be using [Azure](https://azure.microsoft.com/) for the artificial intelligence services. To follow along with the code during the workshop, you'll need an account on Azure. If you don't already have one, you can register in a couple of ways.
+
+> **NOTE:** All exercises except for the [Face API](https://azure.microsoft.com/services/cognitive-services/face/) module will be completed using the free tier, meaning if you are using your current account, or one you're about to create, there will be **zero cost**. You can consult the [pricing for Face API](https://azure.microsoft.com/en-us/pricing/details/cognitive-services/face-api/) for possible costs. At the time of this write-up, the cost is typically $1 USD for 1,000 transactions, and we will be executing about 20 transactions.
+
+### Active student
+
+If you're an [active student](https://azure.microsoft.com/free/free-account-students-faq/), you can enroll for [Azure for Students](https://aka.ms/a4s) for **free**. Azure for Students offers $100 in credit over 12 months, and many free services for testing and learning. You can visit [Azure for Students](https://aka.ms/a4s) to enroll!
+
+### Lifelong learner
+
+If you're already in the industry and are expanding your skills into Azure, you can create a **free** trial account on Azure. When creating a new account you will receive $200 in credit for the first 30 days. Several free services are also included with this account for testing and learning. **No commitment** is required. You can [enroll on the Azure website](https://azure.microsoft.com/free/).
+
 ## Code Editor (Visual Studio Code)
 
 To work with the code you will need a code editor. You are free to use any editor you like. Your instructor will use Visual Studio Code, an open source (OSS) editor from Microsoft.
@@ -52,7 +66,7 @@ To ease creation of resources on Azure, this workshop uses the Azure CLI. By usi
 
 ### Installation
 
-To install the Azure CLI, navigate to [Azure CLI installation](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest) and follow the instructions. Beccause the Azure CLI is based on Python it will run on all operating systems.
+To install the Azure CLI, navigate to [Azure CLI installation](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest) and follow the instructions. Beccause the Azure CLI is based on Python it will run on all operating systems.
 
 Once installed, login to the Azure CLI by using `az login`. This operation will open a browser for authentication.
 

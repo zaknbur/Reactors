@@ -22,10 +22,10 @@ We currently have five workshops that we run throughout each of our Reactor loca
 
 | Workshop | Date | Instructor(s) | Location | Registration | 
 | -------- | ---- | ------------- | -------- | ------------ |
-| Beginners Data Science for Python Developers | October 23, 2019 | Justin Garrett | Tel Aviv | [Registration Open](https://www.microsoftevents.com/profile/form/index.cfm?PKformID=0x7620578abcd) |
-| Building Software That Recognizes You | October 22, 2019 | Justin Garrett | Tel Aviv | [Registration Open](https://www.microsoftevents.com/profile/form/index.cfm?PKformID=0x7619286abcd) |
-| Building Software That Recognizes You | October 22, 2019 | Lee Stott | London | [Registration Open](https://www.microsoftevents.com/profile/7747954) |
-| Beginners Data Science for Python Developers | October 21, 2019 | Lee Stott | London | [Registration Open](https://www.microsoftevents.com/profile/7749740) |
+| Beginners Data Science for Python Developers | October 23, 2019 | Justin Garrett | Tel Aviv | Closed |
+| Building Software That Recognizes You | October 22, 2019 | Justin Garrett | Tel Aviv | Closed |
+| Building Software That Recognizes You | October 22, 2019 | Lee Stott | London | Closed |
+| Beginners Data Science for Python Developers | October 21, 2019 | Lee Stott | London | Closed |
 | Building Software That Recognizes You | September 19, 2019 | Shana Matthews | Sydney | Closed |
 | Beginners Data Science for Python Developers | September 18, 2019 | Shana Matthews | Sydney | Closed |
 | Introduction to Python for Data Science | September 17, 2019 | Shana Matthews | Sydney | Closed |

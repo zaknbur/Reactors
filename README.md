@@ -1,8 +1,8 @@
 # Microsoft Reactor Workshops
 
-Welcome to Microsoft's Reactor Workshop Content Repo! 
+Welcome to Microsoft's Reactor Workshop Content Repo!
 
-In this repo you will find various resources for workshops that Microsoft runs around the world in each of the Reactor locations. If you find any errors or have ideas for improvements, we welcome you to contribute to this repo by opening a PR. 
+In this repo you will find various resources for workshops that Microsoft runs around the world in each of the Reactor locations. If you find any errors or have ideas for improvements, we welcome you to contribute to this repo by opening a PR.
 
 For more information about the Microsoft Reactors and for other Microsoft and Community events, visit the [Reactor Website](https://developer.microsoft.com/en-us/reactor/).
 
@@ -10,7 +10,7 @@ For more information about the Microsoft Reactors and for other Microsoft and Co
 
 We currently have five workshops that we run throughout each of our Reactor locations around the world.  
 
-| Workshop | Description | Learning Resource | Slides | 
+| Workshop | Description | Learning Resource | Slides |
 | -------- | ----------- | ----------------- | ------ |
 | Introduction to Python for Data Science | "Data enables us to understand the world around us. Whether we're gathering data about our natural world to understand how it is changing, or analyzing patterns in how societies grow and change to ensure we're supporting all people, data is what drives the conversation. In this one-day workshop, we invite you to take the first step to learning how to understand data. With the power of Python, you will be able to explore data more quickly and develop more complex learnings from that data with just a few lines of code. Step 1: Learn the basics of Python coding and understand how it can be used to digest large data sets. | [Learning Materials Found at: aka.ms/DataScience1](https://aka.ms/DataScience1) | [Data Science Workshop Slides](https://reaactors.blob.core.windows.net/slides/Data_Science_Slides.pptx) are for a joint workshop that includes the Beginners Data Science for Python Developers content |
 | Beginners Data Science for Python Developers | Every day new data is created. New parts are made and shipped from factories, people continuously tweet, and companies grow and fluctuate causing major changes in the market. With the addition of more data comes the difficulty of being able to process that data. As humans, we can understand complex scenarios, but computers are much better at being able to analyze large datasets. In this workshop, you will get a glimpse into how we can teach machines to analyze complex scenarios at a much larger scale than we're able to. After you've cleaned and organized your data, you will have an opportunity to train and test machine learning models, and even publish your predictor online for others to explore. | [Learning Materials Found at: aka.ms/DataScience2](https://aka.ms/DataScience2) | [Data Science Workshop Slides](https://reaactors.blob.core.windows.net/slides/Data_Science_Slides.pptx) are for a joint workshop that includes the Introduction to Python for Data Science content |
@@ -20,7 +20,7 @@ We currently have five workshops that we run throughout each of our Reactor loca
 
 ## Find a Local Offering
 
-| Workshop | Date | Instructor(s) | Location | Registration | 
+| Workshop | Date | Instructor(s) | Location | Registration |
 | -------- | ---- | ------------- | -------- | ------------ |
 | Beginners Data Science for Python Developers | October 23, 2019 | Justin Garrett | Tel Aviv | [Registration Open](https://www.microsoftevents.com/profile/form/index.cfm?PKformID=0x7620578abcd) |
 | Building Software That Recognizes You | October 22, 2019 | Justin Garrett | Tel Aviv | [Registration Open](https://www.microsoftevents.com/profile/form/index.cfm?PKformID=0x7619286abcd) |
@@ -31,4 +31,3 @@ We currently have five workshops that we run throughout each of our Reactor loca
 | Introduction to Python for Data Science | September 17, 2019 | Shana Matthews | Sydney | Closed |
 | AI For Good | September 5, 2019 | Christopher Harrison | San Francisco | Closed |
 | Introduction to Data Science | July 22, 2019 | Justin Garrett and Sarah Guthals | Redmond | Closed |
-

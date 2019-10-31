@@ -21,6 +21,15 @@ The primary source of content will be relatively bare Azure Notebooks where the 
 | 2:15 - 3:45pm | Machine Learning Capston Project | 
 | 3:45 - 4pm | Wrap Up |
 
+## 3-Hour Version
+| Hour | Topic |
+| ---- | ----- | 
+| 6:00 - 6:30pm | Data Science Motivation |
+| 6:30 - 8:00m | Introduction to Machine Learning Models and Linear Regression |
+| 8:00 - 8:15pm | Break | 
+| 8:15 - 9:30pm | Using the Cloud for Machine Learning with Azure ML Studio |
+
+
 ## Tips and Tricks
 Azure Notebooks is still in Preview. This means that there are some times when it will fail. Here are some tips for avoiding losing your work:
 - Ensure their work is being saved. In the Jupyter Notebook there is always one of two messages to the right of the title of the notebook: `(autosaved)` or `(unsaved changes)`. Make sure you're noticing that your work is being saved. You should consider checking every 10 minutes or so. 

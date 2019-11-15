@@ -1,3 +1,7 @@
+# Starter site
+
+We'll be adding functionality to an existing website, which represents our client, Contoso Travel. Contoso Travel is working to enable travelers to translate street signs and identify who is in a picture. You'll add functionality to three separate sections of the website - **translate** for sign translation, **train** for training the application to detect faces, and finally **detect** to identify faces.
+
 ## Explore the current files
 
 1. Take a moment to browse the files that were copied into the project directory. Verify that they include:
@@ -13,7 +17,7 @@
 - **static/banner.jpg**, which contains the website banner
 - **static/placeholder.jpg**, which contains a placeholder image for photos that have yet to be uploaded
 
-> **NOTE:** We won't be focusing on working with HTML during this course. Again, we want to be able to focus on the code necessary for Cognitive Services.
+> **NOTE:** We won't be focusing on working with HTML during this course. We want to be able to focus on the code necessary for Cognitive Services.
 
 ## Launch the starter site
 

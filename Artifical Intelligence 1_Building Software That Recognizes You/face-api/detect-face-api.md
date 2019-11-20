@@ -120,31 +120,6 @@ Sadly the candidate doesn't include the person's name, but it does have their `p
 
 We finish by appending to our results list an appropriate message. If the score is greater than .8 (80%), then it's very likely we have the right person. Otherwise, we're not entirely sure.
 
-Similar to our boilerplate code in our [train function](./train-face-api.md), we start by looking to see if the user requested the page by **GET**, meaning they navigated to it. If so, we simply display the **detect** template. If they uploaded an image via **POST** we ensure there's a file uploaded, and then store it in a variable named `image`.
-
-#### Getting the detected faces
-
-``` python
-# Find all the faces in the picture
-faces = face_client.face.detect_with_stream(image)
-
-# Get just the IDs so we can see who they are
-face_ids = list(map((lambda f: f.face_id), faces))
-
-# Ask Azure who the faces are
-identified_faces = face_client.face.identify(face_ids, person_group_id)
-
-names = get_names(identified_faces)
-```
-
-Finding the people in an image involves a few steps.
-
-First, we send the image to Azure by calling `detect_with_stream`, which will return a collection of `face` objects. Each `face` object includes a series of properties, such as landmarks (facial features), bounding box, and an ID for the detected face. Unfortunately, we don't get the names as part of this execution. To get the name, we need to walk through a few more steps.
-
-We need to get the ID for each detected face, and only the IDs. We use Python's `map` function to eliminate all other information from the face, retrieving just `face_id`. [map](https://docs.python.org/3/library/functions.html?highlight=sorted#map) accepts a function or lambda which it will call for each item in a list (the second parameter).
-
-Once we have the IDs of the faces we can then call `identify`, which will give us a list of possible matches for each id. Unfortunately, this still doesn't give us the name! We're going to add another helper function to perform the final step of mapping the identified face to the name.
-
 ## Calling our helper function from detect
 
 Let's update `detect` to now call our `detect_people` function. Inside of `detect` in **app.py**, just below the comment which reads `# TODO: Add code to detect people in picture`, add the following code. We call our helper function, passing in the `face_client`, the ID of the person group, and the blob of the image.

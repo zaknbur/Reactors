@@ -119,7 +119,9 @@ The sample code is provided as part of the [Reactors](https://github.com/microso
 git clone https://github.com/microsoft/reactors
 ```
 
-4. Navigate to the AI directory
+### Install Python packages
+
+1. Navigate to the AI directory
 
 ``` console
 # Windows
@@ -129,8 +131,7 @@ cd reactors\Artifical Intelligence 1_Building Software That Recognizes You\start
 cd ./reactors/Artifical Intelligence 1_Building Software That Recognizes You/starter-site
 ```
 
-5. Create a virtual environment and install packages
-Let's create a virtual environment for the packages we'll be using. Virtual environments allow us to separate packages from other environments. Return to the command line and issuing the following command:
+2. Let's create a virtual environment for the packages we'll be using. Virtual environments allow us to separate packages from other environments. Return to the command line and issuing the following command:
 
 ``` console
 # Windows
@@ -144,8 +145,7 @@ python3 -m venv env
 
 Note: If you're using macOS or Linux the leading . for the . ./env/bin/activate is required as it indicates to Python where your source code resides.
 
-6. Install the necessary Python packages
-Install the packages listed in requirements.txt by using pip
+3. Finally, we'll install the packages listed in requirements.txt by using pip
 
 ``` console
 pip install -r requirements.txt
@@ -154,4 +154,6 @@ pip install -r requirements.txt
 pip3 install -r requirements.txt
 ```
 
-If you're following along, the next step is to [start the site](./starting-site.md).
+## Launching the starter
+
+Congratulations!! You've got everything configured, and you're ready to [start the sample site](./starting-site.md)!

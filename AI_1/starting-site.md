@@ -2,9 +2,60 @@
 
 We'll be adding functionality to an existing website, which represents our client, Contoso Travel. Contoso Travel is working to enable travelers to translate street signs and identify who is in a picture. You'll add functionality to three separate sections of the website - **translate** for sign translation, **train** for training the application to detect faces, and finally **detect** to identify faces.
 
+## Obtaining the starter site
+
+The sample code is provided as part of the [Reactors](https://github.com/microsoft/reactors) repository on [GitHub](https://github.com). Let's clone the repository and get the environment setup for the code.
+
+### Clone the repository
+
+1. Open a new command or terminal window to use solely for running your application
+2. Navigate to the folder you want to put the code into, which was created earlier
+3. Clone the repository
+
+``` git
+git clone https://github.com/microsoft/reactors
+```
+
+### Install Python packages
+
+1. Navigate to the AI directory
+
+``` console
+# Windows
+cd reactors\AI_1\starter-site
+
+# Linux or macOS
+cd ./reactors/AI_1/starter-site
+```
+
+2. Let's create a virtual environment for the packages we'll be using. Virtual environments allow us to separate packages from other environments. Return to the command line and issuing the following command:
+
+``` console
+# Windows
+python -m venv env
+.\env\Scripts\activate
+
+# macOS or Linux
+python3 -m venv env
+. ./env/bin/activate
+```
+
+Note: If you're using macOS or Linux the leading `.` for the `. ./env/bin/activate` is required as it indicates to Python where your source code resides.
+
+3. Finally, we'll install the packages listed in requirements.txt by using pip
+
+``` console
+pip install -r requirements.txt
+
+# macOS or Linux
+pip3 install -r requirements.txt
+```
+
 ## Explore the current files
 
-1. Take a moment to browse the files that were copied into the project directory. Verify that they include:
+Take a moment to browse the files that were copied into the project directory. Open **starter-site** in the code editor of your choice. If you are using [Visual Studio Code](https://code.visualstudio.com), you can perform this operation by using the command `code .` from the terminal or command window.
+
+Verify the following files exist:
 
 - **app.py**, which holds the Python code that drives the site
 - **image.py**, which holds a helper class we'll use for image management
@@ -35,7 +86,7 @@ flask run
 
 Navigate to **http://localhost:5000**
 
-> **NOTE:** Keep this window open, as we're going to be making changes to our site throughout the day. If you accidentally close it, you can restart your site by issuing the same commands from above.
+> **NOTE:** Keep this terminal or command window open, as we're going to be making changes to our site throughout the day. If you accidentally close it, you can restart your site by issuing the same commands from above.
 
 ## Open the site
 

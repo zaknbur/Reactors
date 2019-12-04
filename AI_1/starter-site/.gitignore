@@ -5,6 +5,10 @@
 ### dotenv ###
 .env
 
+### Virtual environments ###
+venv
+env
+
 ### Flask ###
 instance/*
 !instance/.gitignore

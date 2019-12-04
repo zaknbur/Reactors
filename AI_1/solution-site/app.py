@@ -9,7 +9,7 @@ load_dotenv()
 # Load keys
 COGSVCS_CLIENTURL = os.environ["COGSVCS_CLIENTURL"]
 COGSVCS_KEY = os.environ["COGSVCS_KEY"]
-COGSVCS_REGION = os.environ["COGSVCS_REGION"]
+COGSVCS_REGION = 'northcentralus'
 
 # Create vision_client
 from msrest.authentication import CognitiveServicesCredentials
@@ -201,6 +201,9 @@ def detect_people(client: FaceClient, person_group_id, image):
     # Get just the IDs (for identification)
     face_ids = list(map((lambda face: face.face_id), faces))
 
+    for face in faces:
+        print(face)
+
     # Identify the faces
     identified_faces = face_client.face.identify(face_ids, person_group_id)
 
@@ -225,8 +228,8 @@ def detect_people(client: FaceClient, person_group_id, image):
 
         # Add the person to the list of results
         if top_candidate.confidence > .8:
-            results.append('I see ' + person.name)
+            results.append('I see ' + person.name + ' - ' + str(top_candidate.confidence))
         else:
-            results.append('I think I see ' + person.name)
+            results.append('I think I see ' + person.name + ' - ' + str(top_candidate.confidence))
 
     return results

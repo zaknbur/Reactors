@@ -8,7 +8,7 @@ To follow along with the exercises which make up this workshop, you will need a 
 
 We will be using [Azure](https://azure.microsoft.com/) for the artificial intelligence services. To follow along with the code during the workshop, you'll need an account on Azure. If you don't already have one, you can register in a couple of ways.
 
-> **NOTE:** All exercises except for the [Face API](https://azure.microsoft.com/services/cognitive-services/face/) module will be completed using the free tier, meaning if you are using your current account, or one you're about to create, there will be **zero cost**. You can consult the [pricing for Face API](https://azure.microsoft.com/en-us/pricing/details/cognitive-services/face-api/) for possible costs. At the time of this write-up, the cost is typically $1 USD for 1,000 transactions, and we will be executing about 20 transactions.
+> **NOTE:** All exercises except for the [Face API](https://azure.microsoft.com/services/cognitive-services/face/) module will be completed using the free tier, meaning if you are using your current account, or one you're about to create, there will be **zero cost**. You can consult the [pricing for Face API](https://azure.microsoft.com/pricing/details/cognitive-services/face-api/) for possible costs. At the time of this write-up, the cost is typically $1 USD for 1,000 transactions, and we will be executing about 20 transactions.
 
 ### Active student
 

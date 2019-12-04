@@ -34,7 +34,7 @@ COGSVCS_REGION = 'northcentralus'
 
 ## Create the client
 
-We'll be using the `ComputerVisionClient` to use [Computer Vision](https://docs.microsoft.com/azure/cognitive-services/Computer-vision/Home). We'll need to load the appropriate classes, `CognitiveServiceCredentials`, which will be used to store the password, `ComputerVisionClient`, which is the actual client, and `ComputerVisionErrorException`, which represents errors raised by the service. The code finishes with the creation of the credentials, followed by the client. Add the following function to the end of app.py.
+We'll be using the `ComputerVisionClient` to use [Computer Vision](https://docs.microsoft.com/azure/cognitive-services/Computer-vision/Home). We'll need to load the appropriate classes, `CognitiveServiceCredentials`, which will be used to store the password, `ComputerVisionClient`, which is the actual client, and `ComputerVisionErrorException`, which represents errors raised by the service. The code finishes with the creation of the credentials, followed by the client. Add the following below the comment `# Create vision_client`.
 
 ``` python
 # Create vision_client

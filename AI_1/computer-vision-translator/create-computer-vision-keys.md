@@ -88,7 +88,7 @@ az extension add -n hack
 We will execute `az hack create` by specifying a runtime of **Python**, a database of type **MySQL** (although we won't be using a database as part of our project), a location of **northcentralus**, and to enable AI through Cognitive Services.
 
 ``` terminal
-az hack create --runtime python --location northcentralus --ai --output yaml
+az hack create --name reactor --runtime python --location northcentralus --ai --output yaml
 ```
 
 > **NOTE:** When choosing locations, it's important to ensure all related services are created in the same location. Making calls across various Azure locations is the leading cause of poor performing applications on Azure. For our purposes, we're going to locate everything in **northcentralus**.
@@ -97,10 +97,13 @@ az hack create --runtime python --location northcentralus --ai --output yaml
 
 `az hack create` takes a series of parameters:
 
+- `name`, which will be the root name used for all items created
 - `runtime`, to indicate what runtime we'll be using for our application, such as Node.js (node) or PHP
 - `ai`, to create a Cognitive Services All in One key
 - `location`, to indicate the Azure region into which we want to create our resources
 - `output`, which we set to **yaml**, which allows us to control the output from the command (makes it easier to copy/paste later)
+
+The utility will add five random characters to the end of the name you provide to ensure uniqueness. If you later decide you want to take your application to production, you can always upgrade the plan the App Service is running on and then [provide a custom domain](https://docs.microsoft.com/Azure/app-service/app-service-web-tutorial-custom-domain).
 
 ## Last step
 

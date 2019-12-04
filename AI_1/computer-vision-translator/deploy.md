@@ -34,7 +34,7 @@ git commit -m "Initial commit"
 To add your web app as a remote for your Git repository, execute the following command from the same terminal or command window. You will need the Git URL from the prior step when you executed `az hack create`
 
 ``` terminal
-git remote add azure <giturl>
+git remote add azure https://<appname>.scm.azurewebsites.net:443/<appname>.git
 ```
 
 > **NOTE:** If you lost the information created in prior steps, you can display the values by using `az hack show --name <appname>` from your command or terminal window if you installed the Azure CLI, or from [Cloud Shell](https://shell.azure.com).

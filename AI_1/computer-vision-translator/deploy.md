@@ -29,21 +29,31 @@ git add .
 git commit -m "Initial commit"
 ```
 
+### Set a deployment password
+
+In order to perform the deployment, we'll need the password for the deployment user. We'll start by obtaining the publishing name:
+
+``` terminal
+az webapp deployment user show --query publishingUserName
+```
+
+And then we'll set the password, replacing `<username>` with the username displayed above. You will then be prompted for a password; make sure you set it to something secure.
+
+``` terminal
+az webapp deployment user set --user-name <username>
+```
+
 ### Add Azure as a remote destination
 
-To add your web app as a remote for your Git repository, execute the following command from the same terminal or command window. You will need the Git URL from the prior step when you executed `az hack create`
+To add your web app as a remote for your Git repository, execute the following command from the same terminal or command window.
 
 ``` terminal
 git remote add azure https://<appname>.scm.azurewebsites.net:443/<appname>.git
 ```
 
-> **NOTE:** If you lost the information created in prior steps, you can display the values by using `az hack show --name <appname>` from your command or terminal window if you installed the Azure CLI, or from [Cloud Shell](https://shell.azure.com).
->
-> If the username and password does not work or is not available, you can find the credentials using the Azure CLI locally if installed or on [Cloud Shell](https://shell.azure.com). `az webapp deployment user show` will display the username, and `az webapp deployment user set --user-name <username>` will allow you to set the password.
-
 ### Perform the deployment
 
-We're all set and ready to deploy our application! From the same terminal or command window, use `git push` to perform the deployment. While your code is deploying, you'll see Azure creating a virtual environment, upgrading pip, and then installing all of the packages.
+We're all set and ready to deploy our application! From the same terminal or command window, use `git push` to perform the deployment. While your code is deploying, you'll see Azure creating a virtual environment, upgrading pip, and then installing all of the packages. You will be prompted for the username and password you set in the prior step.
 
 ``` terminal
 git push -u azure master

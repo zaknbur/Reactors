@@ -25,9 +25,7 @@ To perform the deployment, we'll use `git push`.
 git push azure
 ```
 
-> **NOTE:** If you lost the information created in prior steps, you can display the values by using `az hack show --name <appname>` from your command or terminal window if you installed the Azure CLI, or from [Cloud Shell](https://shell.azure.com).
->
-> If the username and password does not work or is not available, you can find the credentials using the Azure CLI locally if installed or on [Cloud Shell](https://shell.azure.com). `az webapp deployment user show` will display the username, and `az webapp deployment user set --user-name <username>` will allow you to set the password.
+> **NOTE:** When you push you will be prompted for the password you set in an earlier step. If you forgot what it was, you can [reset your password with Azure CLI](../computer-vision-translator/deploy.md#set-a-deployment-password)
 
 ## Run the website
 

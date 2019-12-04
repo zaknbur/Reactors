@@ -70,9 +70,9 @@ Verify the following files exist:
 
 > **NOTE:** We won't be focusing on working with HTML during this course. We want to be able to focus on the code necessary for Cognitive Services.
 
-## Launch the starter site
+## Start the site
 
-Let's see the starter site using Flask. We will configure Flask to run in development mode by setting the `FLASK_ENV` environmental variable. Running Flask in development mode is helpful when you’re developing a website because Flask automatically reloads any files that change while the site is running. If you let Flask default to production mode and change the contents of an HTML file or other asset, you have to restart Flask to see the change in your browser.
+Let's start the site using Flask. We will configure Flask to run in development mode by setting the `FLASK_ENV` environmental variable. Running Flask in development mode is helpful when you’re developing a website because Flask automatically reloads any files that change while the site is running. If you let Flask default to production mode and change the contents of an HTML file or other asset, you have to restart Flask to see the change in your browser.
 
 ``` bash
 # Windows
@@ -84,10 +84,12 @@ export FLASK_ENV=development
 flask run
 ```
 
-Navigate to **http://localhost:5000**
-
 > **NOTE:** Keep this terminal or command window open, as we're going to be making changes to our site throughout the day. If you accidentally close it, you can restart your site by issuing the same commands from above.
 
 ## Open the site
 
 Open a browser and navigate to `http://localhost:5000`. Confirm the website appears. If you click the buttons the three pages we'll be working with will each open. You will notice the functionality is limited to just displaying the image you upload. We're going to start adding code to add the ability to translate street signs, and eventually detect people in images.
+
+## Next steps
+
+Congratulations! You've configured your environment and are ready to complete the rest of the labs! You can start by examining [Computer Vision and Translation services](computer-vision-translator/README.md). You can also explore [Python basics](intro-python.md) or [Flask basics](intro-flask.md) if you're not familiar with the language or framework.

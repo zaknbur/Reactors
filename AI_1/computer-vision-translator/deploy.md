@@ -4,23 +4,23 @@
 
 [Azure App Service](https://azure.microsoft.com/documentation/articles/app-service-value-prop-what-is/) is a set of services provided by Microsoft Azure to enable developers to easily build and deploy web apps. Included in the App Service family are [Azure Web Apps](https://azure.microsoft.com/documentation/articles/app-service-web-overview/), which allow you to quickly and easily deploy websites built with tools and languages you’re already familiar with.
 
-Azure Web Apps make deploying websites extraordinarily easy—and not just websites built using the Microsoft stack. You can deploy Python apps that use MySQL just as easily as ASP.NET apps that use SQL Server. You can select from a wide variety of Azure Web App templates or build templates of your own. You can configure Azure Web Apps to auto-scale as traffic increases to ensure that your customers aren’t left waiting during periods of peak demand. You can publish apps to staging locations and test them in the cloud before taking them live, and then swap staging and production with the click of a button. You can even create [WebJobs](https://docs.microsoft.com/azure/app-service/webjobs-create) - programs or scripts that run continuously or on a schedule to handle billing and other time-critical tasks. In short, Azure Web Apps take the pain out of publishing and maintaining web apps and are just as suitable for a personal photo-sharing site as they are for enterprise-grade sites serving millions of customers.
+Azure Web Apps simplifies website deployment, and not just websites built using the Microsoft stack. You can deploy Python apps connecting to MySQL databases with the same tools you would for ASP.NET apps connecting to SQL Server databases. You can select from a wide variety of Azure Web App templates or build templates of your own. You can configure Azure Web Apps to auto-scale as traffic increases to ensure that your customers aren’t left waiting during periods of peak demand. You can [publish apps to staging locations](https://docs.microsoft.com/azure/app-service/deploy-staging-slots) and test them in the cloud before taking them live, and then swap staging and production with the click of a button. You can even create [WebJobs](https://docs.microsoft.com/azure/app-service/webjobs-create) - programs or scripts that run continuously or on a schedule to handle billing and other time-critical tasks. In short, Azure Web Apps take the pain out of publishing and maintaining web apps and are just as suitable for a personal photo-sharing site as they are for enterprise-grade sites serving millions of customers.
 
-In this unit, you will deploy Contoso Travel to Azure as an Azure Web App so it can be accessed by anyone, from anywhere, using a browser. And you will learn about App Service application settings, which allow API keys and other “secrets” used by an application to be stored securely in the cloud.
+In this unit, you will deploy Contoso Travel to Azure as an Azure Web App so it can be accessed by anyone, from anywhere, using a browser.
 
 ## Deploying to Azure
 
-`az hack create` configures your web app for [local Git deployment](https://docs.microsoft.com/azure/app-service/deploy-local-git). By using local Git deployment, you are able to add your web app as a [Git remote](https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes), meaning you can push your code to your web app in the same way you'd push your code to GitHub or another code repository.
+`az hack create` configured your web app for [local Git deployment](https://docs.microsoft.com/azure/app-service/deploy-local-git). All keys are stored as [App Settings](https://docs.microsoft.com/azure/app-service/configure-common) for your website, which can be accessed by environmental variables in your application. By using local Git deployment, you are able to add your web app as a [Git remote](https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes), meaning you can push your code to your web app in the same way you'd push your code to GitHub or another code repository.
 
 Because the deployment is done via Git, your [.gitignore](https://git-scm.com/docs/gitignore) file will be honored. When performing the deployment, [Kudu](https://docs.microsoft.com/azure/app-service/deploy-local-git#deploy-with-kudu-build-server) will automatically install the Python packages listed in **requirements.txt**, and start the file named **app.py**. Fortunately, our application is already configured to support this!
 
 ## Performing the deployment
 
-To deploy our application, we will add the remote Git deployment URL as a remote, and then execute a `git push` command to perform the deployment
+To deploy our application, we will add the deployment URL as a Git remote, and then execute a `git push` command to perform the deployment
 
 ### Create Git repository
 
-1. If not already open, open a terminal or command window and navigate to the directory with your code (**reactors/AI_1/starter-site** is the default)
+1. If not already available, open a terminal or command window *on your local system* and navigate to the directory with your code (**reactors/AI_1/starter-site** is the default)
 2. Run the following commands to create a Git repository and add your code
 
 ``` terminal
@@ -31,15 +31,11 @@ git commit -m "Initial commit"
 
 ### Add Azure as a remote destination
 
-To add your web app as a remote for your Git repository, execute the following command from the same terminal or command window. You will need the Git URL from the prior step when you executed `az hack create`
+To add your web app as a remote for your Git repository, execute the following command from the same terminal or command window. Replace `<appname>` with the name of your application, which you you can find from the output you saved when you executed [az hack create](./create-computer-vision-keys.md#run-the-extension).
 
 ``` terminal
 git remote add azure https://<appname>.scm.azurewebsites.net:443/<appname>.git
 ```
-
-> **NOTE:** If you lost the information created in prior steps, you can display the values by using `az hack show --name <appname>` from your command or terminal window if you installed the Azure CLI, or from [Cloud Shell](https://shell.azure.com).
->
-> If the username and password does not work or is not available, you can find the credentials using the Azure CLI locally if installed or on [Cloud Shell](https://shell.azure.com). `az webapp deployment user show` will display the username, and `az webapp deployment user set --user-name <username>` will allow you to set the password.
 
 ### Perform the deployment
 
@@ -48,6 +44,8 @@ We're all set and ready to deploy our application! From the same terminal or com
 ``` terminal
 git push -u azure master
 ```
+
+> **NOTE:** When you push you will be prompted for the username and password which was created by `az hack create` and displayed as part of the output. If no password was generated, you can [reset your password with Azure CLI](../computer-vision-translator/deploy.md#set-a-deployment-password)
 
 ## Run the website
 

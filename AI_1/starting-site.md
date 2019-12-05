@@ -84,7 +84,7 @@ export FLASK_ENV=development
 flask run
 ```
 
-> **NOTE:** Keep this terminal or command window open, as we're going to be making changes to our site throughout the day. If you accidentally close it, you can restart your site by issuing the same commands from above.
+> **NOTE:** **Keep this terminal or command window open**, as we're going to be making changes to our site throughout the day. If you accidentally close it, you can restart your site by issuing the same commands from above.
 
 ## Open the site
 

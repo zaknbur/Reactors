@@ -8,26 +8,22 @@ With our model built, we're now ready to turn our attention to deploying our sit
 
 With all the functionality added to our application, we're ready to publish to Azure! We will use the same [remote Git we created earlier](../computer-vision-translator/deploy.md#add-azure-as-a-remote-destination).
 
-### Commit our changes
+Open (or use) a command or terminal window *on your local system*.
 
-We need to commit our files to our repository before deployment.
+1. Commit changes
 
 ``` terminal
 git add app.py
 git commit -m "Added facial recognition"
 ```
 
-### Performing the deployment
-
-To perform the deployment, we'll use `git push`.
+2. Push to auzre
 
 ``` terminal
 git push azure
 ```
 
-> **NOTE:** If you lost the information created in prior steps, you can display the values by using `az hack show --name <appname>` from your command or terminal window if you installed the Azure CLI, or from [Cloud Shell](https://shell.azure.com).
->
-> If the username and password does not work or is not available, you can find the credentials using the Azure CLI locally if installed or on [Cloud Shell](https://shell.azure.com). `az webapp deployment user show` will display the username, and `az webapp deployment user set --user-name <username>` will allow you to set the password.
+> **NOTE:** When you push you will be prompted for the username and password which was created by `az hack create` and displayed as part of the output. If no password was generated, you can [reset your password with Azure CLI](../computer-vision-translator/deploy.md#set-a-deployment-password)
 
 ## Run the website
 

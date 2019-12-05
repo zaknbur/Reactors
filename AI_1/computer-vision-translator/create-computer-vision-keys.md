@@ -85,7 +85,9 @@ az extension add -n hack
 
 ### Run the extension
 
-We will execute `az hack create` by specifying a runtime of **Python**, a database of type **MySQL** (although we won't be using a database as part of our project), a location of **northcentralus**, and to enable AI through Cognitive Services.
+We will execute `az hack create` by specifying a runtime of **Python**, a database of type **MySQL** (although we won't be using a database as part of our project), a location of **northcentralus**, and to enable AI through Cognitive Services. 
+
+> **NOTE:** When the command completes, **copy the output and paste it into Notepad or another location**; we'll need it a little later.
 
 ``` terminal
 az hack create --name reactor --runtime python --location northcentralus --ai --output yaml
@@ -104,10 +106,6 @@ az hack create --name reactor --runtime python --location northcentralus --ai --
 - `output`, which we set to **yaml**, which allows us to control the output from the command (makes it easier to copy/paste later)
 
 The utility will add five random characters to the end of the name you provide to ensure uniqueness. If you later decide you want to take your application to production, you can always upgrade the plan the App Service is running on and then [provide a custom domain](https://docs.microsoft.com/Azure/app-service/app-service-web-tutorial-custom-domain).
-
-## Last step
-
-Upon successful completion, `az hack` will emit the necessary information to connect to Cognitive Services, your web application, and any other resources you may have created. **Copy the output and paste it into Notepad**; we'll need it a little later.
 
 ## Summary and next steps
 

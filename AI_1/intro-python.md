@@ -28,7 +28,7 @@ One of the most versatile compound data types in Python are lists. Lists can be 
 scores = [100,90,94]
 ```
 
-Python also includes functions whi are available to all lists. For example, [append()](https://docs.python.org/3.7/tutorial/datastructures.html) allows you to add items to the end of your list.
+Python also includes functions which are available to all lists. For example, [append()](https://docs.python.org/3.7/tutorial/datastructures.html) allows you to add items to the end of your list.
 
 ``` python
 scores = [100,90,94]

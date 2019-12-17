@@ -19,6 +19,8 @@ COGSVCS_KEY=<key>
 
 Replace `<clienturl>` and `<key>` with the clienturl and key values you stored from the prior exercise. No quotes or other special characters are needed to contain the values.
 
+> **NOTE:** In Azure Cognitive Services, the `<clienturl>` is called the `Endpoint`.
+
 ## Add configuration code to app.py
 
 You have now subscribed to the Computer Vision API and stored the endpoint and API key. The next step is to modify the Contoso Travel site to load these values.

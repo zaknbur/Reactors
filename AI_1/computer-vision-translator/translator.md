@@ -109,7 +109,7 @@ We pass in the lines of code we wish to translate, which is stored in `messages`
 
 ## Test the site
 
-The last (and best?) step is to test our changes! Refresh the browser window from before (or navigate to **http://localhost:5000**). It should look something like this:
+The last (and best?) step is to test our changes! From the home page select **Translate a sign** or navigate to **http://localhost:5000/translate**. It should look something like this:
 
 ![Screenshot of updated page with language dropdown](../images/vision_added_translate.png)
 

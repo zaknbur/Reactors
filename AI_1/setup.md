@@ -25,6 +25,54 @@ If you're an [active student](https://azure.microsoft.com/free/free-account-stud
 
 If you're already in the industry and are expanding your skills into Azure, you can create a **free** trial account on Azure. When creating a new account you will receive $200 in credit for the first 30 days. Several free services are also included with this account for testing and learning. **No commitment** is required. You can [enroll on the Azure website](https://azure.microsoft.com/free/).
 
+## Quick install guides
+
+If you are using Windows, macOS or Ubuntu, you can follow the quick install guides below to complete the local installation required to complete the labs which are part of this course. If you wish to see more information about the software, you can peruse the [Python](#python), [Code Editor](#code-editor-visual-studio-code) and [Git](#git) sections. The steps listed here will install Git, Python and Visual Studio Code.
+
+### Windows
+
+To streamline the installation of the required components, this quickstart uses [Chocolatey](https://chocolatey.org/), a package management tool for Windows, and will install Git, Visual Studio Code, and Python 3.
+
+1. [Install Chocolatey](https://chocolatey.org/install)
+2. Execute the following command in a new command window
+
+``` shell
+choco install python3 git vscode
+```
+
+### macOS
+
+To streamline the installation of the required components, this quickstart uses [Homebrew](https://brew.sh/), a package management tool for macOS, and will install Git, Visual Studio Code, and Python 3.
+
+1. [Install Homebrew](https://brew.sh/)
+2. Execute the following command in a new terminal window
+
+``` shell
+brew install git visual-studio-code python3
+```
+
+### Debian and Ubuntu
+
+This quickstart uses the [apt](https://help.ubuntu.com/community/AptGet/Howto) and [snap](https://snapcraft.io/) package managers, and will install Git, Visual Studio Code, and Python 3.
+
+1. In a terminal window execute the following command to install Python 3 and Git:
+
+``` shell
+# Package update
+sudo apt-get update
+sudo apt-get upgrade -y
+
+sudo apt-get install python3 python3-pip git -y
+```
+
+2. In a terminal window execute the following command to install Visual Studio Code:
+
+``` shell
+sudo snap install --classic code
+```
+
+> **Note**: If snap isn't available in your Linux distribution, please check the following [installing snapd guide](https://snapcraft.io/docs/installing-snapd), which can help you get set up.
+
 ## Python
 
 The workshop presents a scenario where you will build a website using [Flask](https://palletsprojects.com/p/flask/), which is a lightweight [Python](https://python.org) framework.

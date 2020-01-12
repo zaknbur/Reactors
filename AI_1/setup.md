@@ -3,6 +3,7 @@
 To follow along with the exercises which make up this workshop, you will need a few utilities installed on your system, including Python and an IDE. Specifically, you will need the following:
 
 - An [Azure](https://azure.microsoft.com/) account
+- [Git](https://git-scm.com/)
 - [Python](https://python.org)
 - A code editor, such as [Visual Studio Code](https://code.visualstudio.com/) with the [Python extension](https://marketplace.visualstudio.com/items?itemName=ms-python.python) installed.
 - (Optional) [Azure Command Line Interface (CLI)](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest), a command line tool for managing Azure resources. You can also access the CLI without having to perform a local installation by navigating to [Azure Shell](https://shell.azure.com).

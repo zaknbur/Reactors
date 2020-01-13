@@ -71,9 +71,6 @@ def extract_text_from_image(image, client):
 
     except ComputerVisionErrorException as e:
         return ["Computer Vision API error: " + e.message]
-
-    except:
-        return ["Error calling the Computer Vision API"]
 ```
 
 ### Breaking down the code
